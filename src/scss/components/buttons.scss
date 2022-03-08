@@ -1,0 +1,45 @@
+.button {
+  padding: .5rem 1rem;
+  min-width: 3rem;
+  border: 1px solid $lightgrey;
+  display: inline-block;
+  cursor: pointer;
+  margin: .25rem .5rem .25rem 0;
+  border-radius: .5rem;
+
+  &.selected {
+    background: $lightergrey;
+    color: $darkgrey;
+  }
+
+  &.incorrect {
+    background: #F8BCBC;
+    border-color: #F8BCBC;
+    color: $darkgrey;
+  }
+
+  &.correct {
+    background: #94D7A2;
+    border-color: #94D7A2;
+    color: $darkgrey;
+  }
+
+  &.disabled {
+    opacity: .5;
+    cursor: not-allowed;
+  }
+}
+
+.submit-button {
+  display: block;
+  background-color: mediumpurple;
+  border-color: mediumpurple;
+  min-height: 3rem;
+  color: white;
+  font-size: 1.125rem;
+  border-radius: 1.5rem;
+
+  &:hover {
+    background-color: darken(mediumpurple, 5%);
+  }
+}

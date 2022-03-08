@@ -1,0 +1,56 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+$lightergrey: #DEEBF8;
+$lightgrey: #918E9B;
+$darkgrey: #282D35;
+$darkergrey: #21222A;
+$blue: #61DAFB;
+
+@mixin linear-gradient($clr1,$clr2, $direction: 90deg) {
+  background: -webkit-linear-gradient($direction, $clr1, $clr2);
+  background: -moz-linear-gradient($direction, $clr1, $clr2);
+  background: -o-linear-gradient($direction, $clr1, $clr2);
+  background: linear-gradient($direction, $clr1, $clr2);
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family:  Helvetica, Arial, sans-serif;
+  color: $darkgrey;
+}
+
+#root {
+  height: 100%;
+}
+
+img {
+  max-width: 100%;
+}
+
+.App {
+  padding: 2rem;
+  height: 100%;
+  width: 100%;
+
+  &.dark {
+    background: $darkgrey;
+    color: white;
+  }
+}
+
+.questions {
+  margin-bottom: 2rem;
+}
+
+.container {
+  max-width: 1080px;
+  margin: auto;
+}

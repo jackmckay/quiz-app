@@ -1,0 +1,66 @@
+.nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.toggler {
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 0.625rem;
+    font-weight: 600;
+  }
+
+  .toggler--slider {
+    width: 1.2rem;
+    height: .8rem;
+    background-color: $darkgrey;
+    border-radius: 2rem;
+    margin-inline: .5rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 1px solid $darkergrey;
+    box-sizing: content-box;
+  }
+
+  .toggler--slider--circle {
+    height: 0.625rem;
+    width: 0.625rem;
+    background-color: white;
+    border-radius: 50%;
+  }
+
+  .toggler--light {
+    color: $darkergrey;
+  }
+
+  .toggler--dark {
+    color: $lightgrey;
+  }
+}
+
+.dark {
+  .toggler--slider {
+    border-color: white;
+    background-color: mediumpurple;
+  }
+
+  .toggler--slider--circle {
+    background-color: $darkergrey;
+  }
+
+  .toggler--light {
+    color: $lightgrey;
+  }
+
+  .toggler--dark {
+    color: white;
+  }
+
+  .toggler--slider {
+    justify-content: flex-end;
+  }
+}
