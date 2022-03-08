@@ -1,6 +1,6 @@
 import Question from "./Question";
-import {nanoid} from 'nanoid'
-import Confetti from "react-confetti"
+import {nanoid} from 'nanoid';
+import Confetti from "react-confetti";
 import React from "react";
 
 
@@ -76,7 +76,7 @@ export default function Quiz() {
 	}
 
 	function canComplete() {
-		return (!answers.includes(undefined) && (answers.length === questions.length))
+		return (!answers.includes(undefined) && (answers.length === questions.length));
 	}
 
 	function correctAnswers() {

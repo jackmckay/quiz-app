@@ -18,9 +18,9 @@ export default function Question(props) {
 
 	function checkCorrect(option) {
 		if (props.quizComplete && option.isCorrect) {
-			return 'correct'
+			return 'correct';
 		} else if (props.quizComplete && option.isSelected) {
-			return 'incorrect'
+			return 'incorrect';
 		}
 	}
 

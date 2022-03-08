@@ -29,6 +29,7 @@ body {
 
 #root {
   height: 100%;
+  overflow: auto;
 }
 
 img {
@@ -39,6 +40,7 @@ img {
   padding: 2rem;
   height: 100%;
   width: 100%;
+  overflow: auto;
 
   &.dark {
     background: $darkgrey;
